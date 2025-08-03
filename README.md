@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖼️ AI Photo Editor – Full Stack React Project
 
-## Getting Started
+A modern, full-stack, AI-powered photo editor built with **Next.js**, **Fabric.js**, **Tailwind CSS**, **ImageKit**, and **Shadcn UI**. Edit, enhance, and transform images directly in the browser with AI features and a beautiful UI/UX.
 
-First, run the development server:
+## 🚀 Features
+
+- ✨ **Drag & Drop Canvas Editor** with Fabric.js
+- 🎨 **Drawing, Text, Shapes, Filters** – Layered editing system
+- 🤖 **AI-Powered Image Enhancements**  
+  (Background removal, colorization, upscaling – via integrated AI APIs)
+- ☁️ **Image Uploads & Optimization** via **ImageKit**
+- 🧩 **Responsive & Accessible UI** built with **Shadcn UI + Tailwind**
+- 💾 **Export & Save Designs** (JPG/PNG format)
+- 🛡️ **Full-Stack Authentication** and image privacy (optional)
+- 🌙 **Dark Mode Support**
+
+## 🛠️ Tech Stack
+
+| Layer        | Technologies                            |
+|--------------|------------------------------------------|
+| Frontend     | Next.js (App Router), React, Fabric.js   |
+| Styling      | Tailwind CSS, Shadcn UI, Framer Motion   |
+| Backend      | Next.js API Routes                       |
+| Image Hosting| ImageKit                                 |
+| AI Services  | Integrated AI APIs (e.g., Replicate, OpenAI) |
+| Auth         | NextAuth.js or Clerk (configurable)      |
+| Deployment   | Vercel         |
+
+
+
+## 📦 Installation
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/ai-photo-editor.git
+cd ai-photo-editor
+
+# 2. Install dependencies
+npm install
+
+# 3. Configure environment variables
+cp .env.example .env
+# Add API keys for ImageKit, AI services, etc.
+
+
+
+
+
+# Run unit tests
+npm run test
+
+# Lint code
+npm run lint
+
+
+# 4. Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
